@@ -1,0 +1,10 @@
+POST http://localhost:8080/EventHubTrigger HTTP/1.1 
+Content-Type: application/json
+
+{
+    "Data":{
+        "timestamp":"\"02/26/2023 19:21:06\"",
+        "value":"\"10\"",
+        "value2":"\"49\""}
+    },
+}

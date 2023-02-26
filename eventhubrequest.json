@@ -1,0 +1,35 @@
+{
+    "Data":{
+        "eventHubMessages":"\"{\\\"timestamp\\\": \\\"2023-02-26T19:59:17.886197\\\", \\\"value\\\": 10, \\\"value2\\\": 46}\""
+    },
+    "Metadata":{
+        "PartitionContext":{
+            "FullyQualifiedNamespace":"rdstesting123.servicebus.windows.net",
+            "EventHubName":"test",
+            "ConsumerGroup":"rust",
+            "PartitionId":"0"
+        },
+        "Offset":"436968",
+        "SequenceNumber":"3227",
+        "EnqueuedTimeUtc":"2023-02-26T18:59:16",
+        "Properties":{},
+        "SystemProperties":{
+            "user-id":{"Length":0,"IsEmpty":true},
+            "x-opt-sequence-number":3227,
+            "x-opt-offset":436968,
+            "x-opt-enqueued-time":"2023-02-26T18:59:16.463+00:00",
+            "SequenceNumber":3227,
+            "Offset":436968,
+            "PartitionKey":null,
+            "EnqueuedTimeUtc":"2023-02-26T18:59:16.463"
+        },
+        "sys":{
+            "MethodName":"EventHubTrigger",
+            "UtcNow":"2023-02-26T18:59:18.3169934Z",
+            "RandGuid":"374bfffd-c1ff-40f5-81da-4be68169707e"
+            },
+        "timestamp":"\"02/26/2023 19:59:17\"",
+        "value":"\"10\"",
+        "value2":"\"46\""
+    }
+}
