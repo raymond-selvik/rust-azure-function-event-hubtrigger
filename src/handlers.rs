@@ -4,12 +4,12 @@ use axum::{Json, http::StatusCode, response::IntoResponse};
 use crate::{models, event_processor};
 
 pub async fn handle_eventhub_event(Json(body): Json<models::EventhubRequest>) -> impl IntoResponse {
-    println!("{}", body.data.eventHubMessages);
+    println!("{}", body.data.event_hub_message);
 
-    let event = parse_event_from_string(&body.data.eventHubMessages);
+    let event = parse_event_from_string(&body.data.event_hub_message);
 
     event_processor::process_event(event);
-    
+
     let response = models::TriggerResponse {
         name: String::from("Hello")
     };

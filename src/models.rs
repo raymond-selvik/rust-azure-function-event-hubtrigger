@@ -1,3 +1,4 @@
+use chrono::{DateTime, Utc};
 use serde::{Serialize, Deserialize};
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
@@ -12,12 +13,14 @@ pub struct EventhubRequest {
 }
 #[derive(Serialize,PartialEq, Deserialize, Debug, Clone)]
 pub struct EventhubMessage {
-    pub eventHubMessages: String
+    #[serde(alias = "eventHubMessages")]
+    pub event_hub_message: String
 }
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Deserialize)]
 pub struct EventHubEvent {
-    pub timestamp: String, 
+    pub timestamp: DateTime<Utc>, 
     pub value: i32,
     pub value2: i32
 }
+
