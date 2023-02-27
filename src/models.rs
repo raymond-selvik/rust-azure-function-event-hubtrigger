@@ -1,7 +1,7 @@
 use serde::{Serialize, Deserialize};
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
-pub struct Responsemsg {
+pub struct TriggerResponse {
     pub name: String
 }
 
